@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>URL Shortener</title>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <header>
+        <ul>
+            <li><a href="#">Shortener</a></li>
+            <li><a href="shorts">Shortened</a></li>
+        </ul>
+    </header>
+    <div class="flex-grow flex justify-center items-center">
+        <div class="bg-white rounded-lg shadow-lg p-8 max-w-md w-full">
+            <h1 class="text-2xl font-semibold mb-4 text-center">Link Shortener</h1>
+            <form>
+                <div class="mb-4">
+                    <input type="text" name="inp" placeholder="Enter URL" class="border border-gray-300 rounded-md px-4 py-2 w-full focus:outline-none focus:border-blue-500">
+                </div>
+                <div class="mb-4">
+                    <button type="submit" name="btn" class="bg-blue-500 text-white rounded-md px-4 py-2 w-full">Shorten</button>
+                </div>
+                {{#if shortened_url}}
+                    <div class="text-center text-sm text-gray-500">
+                        Shortened Link: <span class="text-blue-600 font-semibold hover:underline">{{shortened_url}}</span> | Clicks: <span class="text-gray-600 font-semibold">{{clicks}}</span>
+                    </div>
+                {{/if}}
+            </form>
+        </div>
+    </div>
+    <footer class="text-center text-sm text-gray-500 py-1">Created for Rust Programming CS-IS-4047, by Shivam Kedia.</footer>
+</body>
+</html>

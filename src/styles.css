@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.header, ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.header, li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.header {
+    margin: auto;
+    border-bottom: 1px grey solid;
+}
+
+.center-box {
+    border: 1px grey solid;
+    background-color: pink;
+    border-radius: 0.5rem;
+    padding: 3rem;
+}
+
+.item {
+    display: flex;
+    border: 0.5px grey solid;
+    padding: 1rem;
+}
+
+.footer {
+    margin: auto;
+    border-top: 1px grey solid;
+}
+
